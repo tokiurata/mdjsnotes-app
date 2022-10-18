@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom/client';
 import * as esbuild from 'esbuild-wasm';
-import { unpkgPathPlugin } from './plugin/unpkg-path-plugin';
-import { fetchPlugin } from './plugin/fetch-plugin';
+import { unpkgPathPlugin } from './plugins/unpkg-path-plugin';
+import { fetchPlugin } from './plugins/fetch-plugin';
 
 const App = () => {
   const ref = useRef<any>();
