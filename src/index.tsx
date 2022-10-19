@@ -5,6 +5,7 @@ import { unpkgPathPlugin } from './plugins/unpkg-path-plugin';
 import { fetchPlugin } from './plugins/fetch-plugin';
 
 import CodeEditor from '../src/components/code-editor';
+import 'bulmaswatch/superhero/bulmaswatch.min.css';
 
 const App = () => {
   const ref = useRef<any>();
