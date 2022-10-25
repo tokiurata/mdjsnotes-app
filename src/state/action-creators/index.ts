@@ -1,16 +1,19 @@
-import { ActionTypes } from "../action-types";
+import { Dispatch } from 'redux';
+import { ActionType } from "../action-types";
 import {
   MoveCellAction,
   DeleteCellAction,
   InsertCellAfterAction,
   UpdateCellAction,
   Direction,
+  Action,
 } from "../actions";
 import { CellTypes } from "../cell";
+import bundler from '../../bundler';
 
 export const updateCell = (id: string, content: string): UpdateCellAction => {
   return {
-    type: ActionTypes.UPDATE_CELL,
+    type: ActionType.UPDATE_CELL,
     payload: {
       id,
       content,
@@ -20,7 +23,7 @@ export const updateCell = (id: string, content: string): UpdateCellAction => {
 
 export const deleteCell = (id: string): DeleteCellAction => {
   return {
-    type: ActionTypes.DELETE_CELL,
+    type: ActionType.DELETE_CELL,
     payload: id,
   };
 };
@@ -30,7 +33,7 @@ export const moveCell = (
   direction: Direction
 ): MoveCellAction => {
   return {
-    type: ActionTypes.MOVE_CELL,
+    type: ActionType.MOVE_CELL,
     payload: {
       id,
       direction,
@@ -43,10 +46,31 @@ export const insertCellAfter = (
   cellType: CellTypes
 ): InsertCellAfterAction => {
   return {
-    type: ActionTypes.INSERT_CELL_AFTER,
+    type: ActionType.INSERT_CELL_AFTER,
     payload: {
       id,
       type: cellType,
     },
+  };
+};
+
+export const createBundle = (cellId: string, input: string) => {
+  return async (dispatch: Dispatch<Action>) => {
+    dispatch({
+      type: ActionType.BUNDLE_START,
+      payload: {
+        cellId,
+      },
+    });
+
+    const result = await bundler(input);
+
+    dispatch({
+      type: ActionType.BUNDLE_COMPLETE,
+      payload: {
+        cellId,
+        bundle: result,
+      },
+    });
   };
 };
