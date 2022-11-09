@@ -1,4 +1,4 @@
-import { useTypedSelector } from "./use-typed-selector";
+import { useTypedSelector } from './use-typed-selector';
 
 export const useCumulativeCode = (cellId: string) => {
   return useTypedSelector((state) => {
@@ -29,7 +29,7 @@ export const useCumulativeCode = (cellId: string) => {
     const cumulativeCode = [];
 
     for (let c of orderedCells) {
-      if (c.type === "code") {
+      if (c.type === 'code') {
         if (c.id === cellId) {
           cumulativeCode.push(showFunc);
         } else {

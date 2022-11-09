@@ -12,7 +12,7 @@ interface CellListItemProps {
 const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
   let child: JSX.Element;
 
-  if (cell.type === "code") {
+  if (cell.type === 'code') {
     child = (
       <>
         <div className="action-bar-wrapper">
@@ -30,11 +30,7 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
     );
   }
 
-  return (
-    <div className='cell-list-item'>
-      {child}
-    </div>
-  );
+  return <div className="cell-list-item">{child}</div>;
 };
 
 export default CellListItem;

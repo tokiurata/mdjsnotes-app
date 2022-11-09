@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from "react";
-import MDEditor from "@uiw/react-md-editor";
+import { useState, useEffect, useRef } from 'react';
+import MDEditor from '@uiw/react-md-editor';
 import { Cell } from '../state';
-import { useActions } from "../hooks/use-actions";
+import { useActions } from '../hooks/use-actions';
 
 import './text-editor.css';
 
@@ -16,7 +16,11 @@ const TextEditor: React.FC<TextEditorProps> = ({ cell }) => {
 
   useEffect(() => {
     const listener = (event: MouseEvent) => {
-      if (ref.current && event.target && ref.current.contains(event.target as Node)) {
+      if (
+        ref.current &&
+        event.target &&
+        ref.current.contains(event.target as Node)
+      ) {
         return;
       }
       setEditing(false);
@@ -31,7 +35,10 @@ const TextEditor: React.FC<TextEditorProps> = ({ cell }) => {
   if (editing) {
     return (
       <div className="text-editor" ref={ref}>
-        <MDEditor value={cell.content} onChange={(v) => updateCell(cell.id, v || '')} />
+        <MDEditor
+          value={cell.content}
+          onChange={(v) => updateCell(cell.id, v || '')}
+        />
       </div>
     );
   }

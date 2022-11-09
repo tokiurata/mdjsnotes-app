@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux';
-import { ActionType } from "../action-types";
+import { ActionType } from '../action-types';
 import {
   MoveCellAction,
   DeleteCellAction,
@@ -7,8 +7,8 @@ import {
   UpdateCellAction,
   Direction,
   Action,
-} from "../actions";
-import { CellTypes } from "../cell";
+} from '../actions';
+import { CellTypes } from '../cell';
 import bundler from '../../bundler';
 
 export const updateCell = (id: string, content: string): UpdateCellAction => {
@@ -28,10 +28,7 @@ export const deleteCell = (id: string): DeleteCellAction => {
   };
 };
 
-export const moveCell = (
-  id: string,
-  direction: Direction
-): MoveCellAction => {
+export const moveCell = (id: string, direction: Direction): MoveCellAction => {
   return {
     type: ActionType.MOVE_CELL,
     payload: {
