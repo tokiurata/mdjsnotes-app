@@ -26,13 +26,13 @@ MDJS Notes in a Markdown and JavaScript in-browser code preview app.
 
 Users should be able to:
 
-- Edit a text cell to right Markdown markup and see the result in the preview window
-- Edit a JavaScript and see the code executed in the preview window
+- Edit a text cell using Markdown markup and see the result in the preview window
+- Edit a JavaScript cell and see the code executed in the preview window
 - Delete, or move cells using the buttons on the top right
 - Add new cells by hovering the space before or after a cell
 - Resize cells and preview windows
-- Import npm modules
-- Use CommonJS or ES modules syntax
+- Use npm modules
+- Accepts CommonJS or ES modules syntax
 - Show any React component, string, number, or any other value by calling the built-in function `show`
 
 ### Built with
