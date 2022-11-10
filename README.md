@@ -9,7 +9,7 @@ MDJS Notes in a Markdown and JavaScript in-browser code preview app.
   - [Link](#link)
   - [Functionality](#functionality)
   - [Built with](#built-with)
-  - [Credits](#credits)
+  - [Acknowledgments](#acknowledgments)
 - [Author](#author)
 
 ## Overview
