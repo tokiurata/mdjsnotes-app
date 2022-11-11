@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 
-import CodeEditor from './code-editor';
-import Preview from './preview';
-import Resizable from './resizable';
-import { Cell } from '../state';
-import { useActions } from '..//hooks/use-actions';
-import { useTypedSelector } from '../hooks/use-typed-selector';
-import { useCumulativeCode } from '../hooks/use-cumulative-code';
+import CodeEditor from '../Code-editor/code-editor';
+import Preview from '../Preview/preview';
+import Resizable from '../Resizable/resizable';
+import { Cell } from '../../state';
+import { useActions } from '../../hooks/use-actions';
+import { useTypedSelector } from '../../hooks/use-typed-selector';
+import { useCumulativeCode } from '../../hooks/use-cumulative-code';
 
 import './code-cell.css';
 

@@ -1,7 +1,7 @@
-import { Cell } from '../state';
-import CodeCell from './code-cell';
-import TextEditor from './text-editor';
-import ActionBar from './action-bar';
+import { Cell } from '../../state';
+import CodeCell from '../Code-cell/code-cell';
+import TextEditor from '../Text-editor/text-editor';
+import ActionBar from '../Action-bar/action-bar';
 
 import './cell-list-item.css';
 
