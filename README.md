@@ -30,9 +30,9 @@ Users should be able to:
 - Edit a JavaScript cell and see the code executed in the preview window
 - Delete, or move cells using the buttons on the top right
 - Add new cells by hovering the space before or after a cell
-- Resize cells and preview windows
+- Resize cells
 - Use npm modules
-- Accepts CommonJS or ES modules syntax
+- Use CommonJS or ES modules syntax
 - Show any React component, string, number, or any other value by calling the built-in function `show`
 
 ### Built with
@@ -42,6 +42,9 @@ Users should be able to:
 - TypeScript
 - JavaScript
 - Axios
+- ESBuild
+- UNPKG
+- localForage
 - CSS3
 - HTML5
 
