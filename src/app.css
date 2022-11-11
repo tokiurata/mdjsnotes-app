@@ -1,0 +1,10 @@
+html {
+  position: relative;
+  min-height: 100vh;
+}
+
+footer {
+  margin: 25px;
+  position: absolute;
+  bottom: 0;
+}
