@@ -2,7 +2,7 @@ import { Provider } from 'react-redux';
 import { store } from './state';
 
 import CellList from './components/Cell-list/cell-list';
-import Logo from './components/Logo/logo';
+import MainFooter from './components/MainFooter/mainFooter';
 
 import 'bulmaswatch/superhero/bulmaswatch.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -15,9 +15,7 @@ const App = () => {
         <main>
           <CellList />
         </main>
-        <footer>
-          <Logo />
-        </footer>
+        <MainFooter />
       </div>
     </Provider>
   );
