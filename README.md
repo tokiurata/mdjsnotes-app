@@ -33,14 +33,13 @@ Users should be able to:
 - Resize cells
 - Use npm modules
 - Use CommonJS or ES modules syntax
-- Show any React component, string, number, or any other value by calling the built-in function `show`
+- Show any React component, string, number, or any other value by calling the built-in function `show()`
 
 ### Built with
 
 - Redux
 - React
 - TypeScript
-- JavaScript
 - Axios
 - ESBuild
 - UNPKG
