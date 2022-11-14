@@ -31,9 +31,8 @@ Users should be able to:
 - Delete, or move cells using the buttons on the top right
 - Add new cells by hovering the space before or after a cell
 - Resize cells
-- Use npm modules
+- Import npm modules
 - Use CommonJS or ES modules syntax
-- Show any React component, string, number, or any other value by calling the built-in function `show()`
 
 ### Built with
 
